@@ -23,7 +23,7 @@ body {
 /* Header */
 header {
     background-color: #ffffff;
-    padding:0 1rem;
+    padding: 0 1rem;
     position: fixed;
     z-index: 99;
     width: 100%;
@@ -38,20 +38,20 @@ header a {
     color: inherit;
 }
 
- h1 {
+h1 {
     font-family: Oswald, sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #252525
- }
+}
 
- #menu {
+#menu {
     font-size: 110%;
     letter-spacing: 4px;
     list-style-type: none;
- }
+}
 
-#menu > li {
+#menu>li {
     margin-bottom: 1em;
 }
 
@@ -71,6 +71,7 @@ nav {
     display: none;
     top: 100%;
 }
+
 /* nav toggle*/
 
 #nav-toggle:checked~nav {
@@ -96,12 +97,23 @@ main {
 
 /* Footer */
 
-footer {
-    background: orange;
+#social-networks {
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+#social-networks i {
+    font-size: 160%;
+    padding: 5%;
+    color: #3a3a3a;
 }
 
 /* Media query: tablets and larger (768px and up)*/
 @media screen and (min-width:768px) {
+
     /*Header*/
     nav {
         display: block;
@@ -112,10 +124,10 @@ footer {
     }
 
     #menu {
-display: flex;
+        display: flex;
     }
 
-    #menu > li {
+    #menu>li {
         padding-left: 1rem;
     }
 
